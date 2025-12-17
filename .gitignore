@@ -1,7 +1,20 @@
-.gradle
-/local.properties
-/.idea/workspace.xml
-/.idea/libraries
+# Gradle files
+.gradle/
+build/
+
+# Local configuration file (sdk.dir is shared)
+local.properties
+
+# Android Studio generated files
+.idea/
+*.iml
+*.ide
 .DS_Store
-/build
 /captures
+
+# Built application files
+*.apk
+*.ap_
+
+# Android logging
+*.log
