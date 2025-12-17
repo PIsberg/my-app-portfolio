@@ -1,12 +1,12 @@
 package udacity.isberg.myappportfolio;
 
-import android.app.Activity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
 
-public class MainActivity extends Activity {
+public class MainActivity extends AppCompatActivity {
 
     private MainGUI mainGUI;
 

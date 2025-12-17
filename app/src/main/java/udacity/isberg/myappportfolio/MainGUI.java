@@ -46,25 +46,19 @@ public class MainGUI {
         public void onClick(android.view.View v) {
 
             String appName = "";
-            switch (v.getId()) {
-                case R.id.appbutton1:
-                    appName = mainActivity.getString(R.string.appbutton1);
-                    break;
-                case R.id.appbutton2:
-                    appName = mainActivity.getString(R.string.appbutton2);
-                    break;
-                case R.id.appbutton3:
-                    appName = mainActivity.getString(R.string.appbutton3);
-                    break;
-                case R.id.appbutton4:
-                    appName = mainActivity.getString(R.string.appbutton4);
-                    break;
-                case R.id.appbutton5:
-                    appName = mainActivity.getString(R.string.appbutton5);
-                    break;
-                case R.id.appbutton6:
-                    appName = mainActivity.getString(R.string.appbutton6);
-                    break;
+            int id = v.getId();
+            if (id == R.id.appbutton1) {
+                appName = mainActivity.getString(R.string.appbutton1);
+            } else if (id == R.id.appbutton2) {
+                appName = mainActivity.getString(R.string.appbutton2);
+            } else if (id == R.id.appbutton3) {
+                appName = mainActivity.getString(R.string.appbutton3);
+            } else if (id == R.id.appbutton4) {
+                appName = mainActivity.getString(R.string.appbutton4);
+            } else if (id == R.id.appbutton5) {
+                appName = mainActivity.getString(R.string.appbutton5);
+            } else if (id == R.id.appbutton6) {
+                appName = mainActivity.getString(R.string.appbutton6);
             }
 
             if (!appName.isEmpty()) {
